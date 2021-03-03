@@ -4,6 +4,8 @@ import { CssBaseline } from '@material-ui/core';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import LightTheme from './themes/LightTheme';
 import IndexPage from './pages/IndexPage';
+import './plugins/firebase';
+import './plugins/i18next';
 import './styles/main.scss';
 
 const App: React.FC = () => {
