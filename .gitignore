@@ -23,3 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 
 .eslintcache
+
+# environment files
+.env
+.env.local
+.env.development
+.env.stagging
+.env.production
