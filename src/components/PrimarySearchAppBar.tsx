@@ -87,7 +87,7 @@ const PrimarySearchAppBar: React.FC = () => {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-  function handleProfileMenuOpen(event: any) {
+  const handleProfileMenuOpen = (event: any) => {
     setAnchorEl(event.currentTarget);
   }
 
@@ -100,7 +100,7 @@ const PrimarySearchAppBar: React.FC = () => {
     handleMobileMenuClose();
   };
 
-  function handleMobileMenuOpen(event: any) {
+  const handleMobileMenuOpen = (event: any) => {
     setMobileMoreAnchorEl(event.currentTarget);
   }
 
