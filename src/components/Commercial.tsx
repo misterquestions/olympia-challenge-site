@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { useTranslation } from 'react-i18next';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Commercial: React.FC = () => {
+  const { t } = useTranslation();
   const classes = useStyles();
   return (
     <Grid container className={classes.root} spacing={1}>
@@ -38,13 +40,13 @@ const Commercial: React.FC = () => {
                 </div>
               </Grid>
               <Typography gutterBottom variant="h6">
-                Optimiza el tiempo de lavado
+                {t('commercial.title1')}
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                Encuentra la lavadora ideal
+                {t('commercial.subtitle1')}
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                para tu espacio y estilo de vida
+                {t('commercial.subtitle1a')}
               </Typography>
             </Paper>
           </Grid>
@@ -56,13 +58,13 @@ const Commercial: React.FC = () => {
                 </div>
               </Grid>
               <Typography gutterBottom variant="h6">
-                Encuentra la paz en la cocina
+                {t('commercial.title2')}
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                Identifica los electrodomésticos que te
+                {t('commercial.subtitle2')}
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                llevena tus metas de salud y bienestar
+                {t('commercial.subtitle2a')}
               </Typography>
             </Paper>
           </Grid>
@@ -74,13 +76,13 @@ const Commercial: React.FC = () => {
                 </div>
               </Grid>
               <Typography gutterBottom variant="h6">
-                La limpieza casi como magia
+                {t('commercial.title3')}
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                Ólvidate de la limpieza,
+                {t('commercial.subtitle3')}
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                y gana tiempo para tí
+                {t('commercial.subtitle3a')}
               </Typography>
             </Paper>
           </Grid>
@@ -91,13 +93,13 @@ const Commercial: React.FC = () => {
                   <img className={classes.img} alt="complex" src={image4} />
                 </div>
                 <Typography gutterBottom variant="h6">
-                  La temperatura ideal!
+                  {t('commercial.title4')}
                 </Typography>
                 <Typography variant="subtitle1" gutterBottom>
-                  Que cada cuarto de tu casa
+                  {t('commercial.subtitle4')}
                 </Typography>
                 <Typography variant="subtitle1" gutterBottom>
-                  sea el más comfortable
+                  {t('commercial.subtitle4a')}
                 </Typography>
               </Grid>
             </Paper>

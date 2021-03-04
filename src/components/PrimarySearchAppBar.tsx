@@ -5,6 +5,7 @@ import {
   Theme,
   createStyles,
 } from '@material-ui/core/styles';
+import { useTranslation } from 'react-i18next';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -87,6 +88,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const PrimarySearchAppBar: React.FC = () => {
+  const { t } = useTranslation();
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [
@@ -125,8 +127,8 @@ const PrimarySearchAppBar: React.FC = () => {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Login</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Register</MenuItem>
+      <MenuItem onClick={handleMenuClose}>{t('navBar.login')}</MenuItem>
+      <MenuItem onClick={handleMenuClose}>{t('navBar.register')}</MenuItem>
     </Menu>
   );
 
@@ -184,7 +186,7 @@ const PrimarySearchAppBar: React.FC = () => {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            {t('navBar.title')}
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

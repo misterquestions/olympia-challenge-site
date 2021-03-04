@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { useTranslation } from 'react-i18next';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
@@ -20,15 +21,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const IndicatorsFutureHome: React.FC = () => {
+  const { t } = useTranslation();
   const classes = useStyles();
   return (
     <div>
       <Paper className={classes.paperWidth}>
         <Typography gutterBottom variant="h3">
-          Indicadores Future Home
+          {t('indicatorsFH.title')}
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          Elige el producto indicado para tí en minutos
+          {t('indicatorsFH.subtitle')}
         </Typography>
         <Grid
           container
@@ -38,44 +40,44 @@ const IndicatorsFutureHome: React.FC = () => {
         >
           <Grid item direction="column" className={classes.root}>
             <Typography gutterBottom variant="h6">
-              Tiempo de Instalación
+              {t('indicatorsFH.titleCard')}
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
-              Indica el esfuerzo requerido
+              {t('indicatorsFH.subtitleCard')}
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
-              para instalar tu producto
+              {t('indicatorsFH.subtitleCardNext')}
             </Typography>
             <Button href="/item-detail" variant="contained">
-              Leer más
+              {t('indicatorsFH.common')}
             </Button>
           </Grid>
           <Grid item direction="column" className={classes.root}>
             <Typography gutterBottom variant="h6">
-              Tieme Server
+              {t('indicatorsFH.titleCard1')}
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
-              Indice de que tan autonomo
+              {t('indicatorFH.subtitleCard1')}
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
-              es el producto
+              {t('indicatorsFH.subtitleCardNext1')}
             </Typography>
             <Button href="/item-detail" variant="contained">
-              Leer más
+              {t('indicatorsFH.common')}
             </Button>
           </Grid>
           <Grid item direction="column" className={classes.root}>
             <Typography gutterBottom variant="h6">
-              Eficiencia Energética
+              {t('indicatorsFH.titleCard2')}
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
-              Indentifica los productos
+              {t('indicatorsFH.subtitleCard2')}
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
-              más eficientes energéticamente
+              {t('indicatorsFH.subtitleCardNext2')}
             </Typography>
             <Button href="/item-detail" variant="contained">
-              Leer más
+              {t('indicatorsFH.common')}
             </Button>
           </Grid>
         </Grid>

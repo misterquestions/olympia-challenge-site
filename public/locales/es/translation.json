@@ -1,5 +1,44 @@
 {
   "index": {
     "hello": "Hola mundo!"
+  },
+  "navBar": {
+    "title": "Home Future",
+    "login": "Iniciar Seción",
+    "register": "Regístrate"
+  },
+  "banner": {
+    "title": "Genera tu Home iD",
+    "subtitle1": "Solo 90 segundos para encontrar los productos",
+    "subtitle2": "mas afines a tu estilo de vida",
+    "button": "Comprá Ahora"
+  },
+  "commercial": {
+    "title1": "Optimiza el tiempo de lavado",
+    "subtitle1": "Encuentra la lavadora ideal",
+    "subtitle1a": "para tu espacio y estilo de vida",
+    "title2": "Encuentra la paz en la cocina",
+    "subtitle2": "Identifica los electrodomésticos que te",
+    "subtitle2a": "llevena tus metas de salud y bienestar",
+    "title3": "La limpieza casi como magia",
+    "subtitle3": "Ólvidate de la limpieza,",
+    "subtitle3a": "y gana tiempo para tí",
+    "title4": "La temperatura ideal!",
+    "subtitle4": "Que cada cuarto de tu casa",
+    "subtitle4a": "sea el más comfortable"
+  },
+  "indicatorsFH": {
+    "title": "Indicadores Future Home",
+    "subtitle": "Elige el producto indicado para tí en minutos",
+    "titleCard": "Tiempo de Instalación",
+    "subtitleCard": "Indica el esfuerzo requerido",
+    "subtitleCardNext": "para instalar tu producto",
+    "common": "Leer más",
+    "titleCard1": "Tieme Server",
+    "subtitleCard1": "Indice de que tan autonomo",
+    "subtitleCardNext1": "es el producto",
+    "titleCard2": "Eficiencia Energética",
+    "subtitleCard2": "Indentifica los productos",
+    "subtitleCardNext2": "más eficientes energéticamente"
   }
 }

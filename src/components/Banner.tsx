@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { useTranslation } from 'react-i18next';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Banner: React.FC = () => {
+  const { t } = useTranslation();
   const classes = useStyles();
 
   return (
@@ -40,18 +42,18 @@ const Banner: React.FC = () => {
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs className={classes.textColor}>
                 <Typography gutterBottom variant="h3">
-                  Genera tu Home iD
+                  {t('banner.title')}
                 </Typography>
                 <Typography variant="subtitle1" gutterBottom>
-                  Solo 90 segundos para encontrar los productos
+                  {t('banner.subtitle1')}
                 </Typography>
                 <Typography variant="subtitle2" gutterBottom>
-                  mas afines a tu estilo de vida
+                  {t('banner.subtitle2')}
                 </Typography>
               </Grid>
               <Grid item>
                 <Button href="/pay-form" variant="contained">
-                  Comprá Ahora
+                  {t('banner.button')}
                 </Button>
               </Grid>
             </Grid>
