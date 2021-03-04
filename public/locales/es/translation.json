@@ -7,6 +7,12 @@
     "login": "Iniciar Seción",
     "register": "Regístrate"
   },
+  "header": {
+    "title":"Optimiza tus días",
+    "subtitle": "El poder de elegir Electrodomésticos",
+    "subtitleNext": "Sustentables, eficientes y a precios accesibles",
+    "buyBtn": "Comprá Ahora"
+  },
   "banner": {
     "title": "Genera tu Home iD",
     "subtitle1": "Solo 90 segundos para encontrar los productos",
