@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import headerImage from '../assets/statics/Lavasecadora_Header.png';
+import headerImage from '../assets/images/Lavasecadora_Header.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {

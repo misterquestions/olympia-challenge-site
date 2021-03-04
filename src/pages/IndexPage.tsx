@@ -15,10 +15,7 @@ const IndexPage: React.FC = () => {
     <>
       <CssBaseline />
       <Container maxWidth="xl">
-        <Typography
-          component="div"
-          style={{ backgroundColor: '#ffffff', height: '400vh' }}
-        >
+        <Typography component="div" style={{ backgroundColor: '#ffffff' }}>
           <Header />
           <Banner />
           <Commercial />

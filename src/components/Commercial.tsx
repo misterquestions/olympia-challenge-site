@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import image1 from '../assets/statics/image1.png';
-import image2 from '../assets/statics/image2.png';
-import image3 from '../assets/statics/image3.png';
-import image4 from '../assets/statics/image4.png';
+import image1 from '../assets/images/image1.png';
+import image2 from '../assets/images/image2.png';
+import image3 from '../assets/images/image3.png';
+import image4 from '../assets/images/image4.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
