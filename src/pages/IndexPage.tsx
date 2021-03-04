@@ -4,7 +4,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Header from '../components/Header';
-import Banner from '../components/Banner'
+import Banner from '../components/Banner';
+import Commercial from '../components/Commercial';
 
 const IndexPage: React.FC = () => {
   const { t } = useTranslation();
@@ -19,6 +20,7 @@ const IndexPage: React.FC = () => {
         >
           <Header />
           <Banner />
+          <Commercial />
         </Typography>
       </Container>
     </>
