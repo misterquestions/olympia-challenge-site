@@ -9,7 +9,7 @@ import image2 from '../assets/images/image2.png';
 import image3 from '../assets/images/image3.png';
 import image4 from '../assets/images/image4.png';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
     marginTop: 20,
