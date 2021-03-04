@@ -26,7 +26,7 @@ const App: React.FC = () => {
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/item-detail/:id" component={ItemDetails} />
-              <Route exact path="/pay-form/:id" component={PayForm} />
+              <Route exact path="/pay-form" component={PayForm} />
               <Route component={NotFound} />
             </Switch>
           </Layout>
