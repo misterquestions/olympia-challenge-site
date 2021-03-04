@@ -6,6 +6,7 @@ import Container from '@material-ui/core/Container';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Commercial from '../components/Commercial';
+import IndicatorsFutureHome from '../components/IndicatorsFutureHome';
 
 const IndexPage: React.FC = () => {
   const { t } = useTranslation();
@@ -21,6 +22,7 @@ const IndexPage: React.FC = () => {
           <Header />
           <Banner />
           <Commercial />
+          <IndicatorsFutureHome />
         </Typography>
       </Container>
     </>
