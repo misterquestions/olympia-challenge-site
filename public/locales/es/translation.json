@@ -43,6 +43,15 @@
     "subtitleCard2": "Indentifica los productos",
     "subtitleCardNext2": "más eficientes energéticamente"
   },
+  "login": {
+    "title": "Iniciar seción",
+    "btn": "Regístrate",
+    "rememberMe": "Recordarme",
+    "btnTitle": "No tienes ninguna cuenta?",
+    "subtitle1": "Olvidé mi contraseña",
+    "subtitle2": "Inicia sesión con Google",
+    "subtitle3": "Inicia sesión con Twitter"
+  },
   "footer": {
     "title": "¡Súscribete e inspirate!",
     "subtitle1": "Productos",
