@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
   textColor: {
     color: 'white',
   },
+  inputField: {
+    border: '1px solid white',
+    borderRadius: 25,
+  },
 }));
 
 const Footer: React.FC = () => {
@@ -30,7 +34,14 @@ const Footer: React.FC = () => {
         <Grid container className={classes.textColor}>
           <Grid item container lg={2} direction="column">
             <Typography>{t('footer.title')}</Typography>
-            <TextField label="Email" variant="outlined" />
+            <TextField
+              autoComplete="string"
+              className={classes.inputField}
+              label="Email"
+              variant="filled"
+              color="secondary"
+              size="small"
+            />
           </Grid>
           <Grid item container lg={2} direction="column">
             <Typography>{t('footer.subtitle1')}</Typography>
