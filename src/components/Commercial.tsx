@@ -17,6 +17,9 @@ const useStyles = makeStyles(() => ({
   image: {
     width: '100%',
   },
+  bold: {
+    fontWeight: 'bold'
+  },
   img: {
     margin: 'auto',
     display: 'block',
@@ -39,13 +42,25 @@ const Commercial: React.FC = () => {
                   <img className={classes.img} alt="complex" src={image1} />
                 </div>
               </Grid>
-              <Typography gutterBottom variant="h6">
+              <Typography
+                gutterBottom
+                variant="h6"
+                className={classes.bold}
+              >
                 {t('commercial.title1')}
               </Typography>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography
+                variant="subtitle1"
+                gutterBottom
+                className={classes.bold}
+              >
                 {t('commercial.subtitle1')}
               </Typography>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography
+                variant="subtitle1"
+                gutterBottom
+                className={classes.bold}
+              >
                 {t('commercial.subtitle1a')}
               </Typography>
             </Paper>
@@ -57,13 +72,25 @@ const Commercial: React.FC = () => {
                   <img className={classes.img} alt="complex" src={image2} />
                 </div>
               </Grid>
-              <Typography gutterBottom variant="h6">
+              <Typography
+                gutterBottom
+                variant="h6"
+                className={classes.bold}
+              >
                 {t('commercial.title2')}
               </Typography>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography
+                variant="subtitle1"
+                gutterBottom
+                className={classes.bold}
+              >
                 {t('commercial.subtitle2')}
               </Typography>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography
+                variant="subtitle1"
+                gutterBottom
+                className={classes.bold}
+              >
                 {t('commercial.subtitle2a')}
               </Typography>
             </Paper>
@@ -75,13 +102,25 @@ const Commercial: React.FC = () => {
                   <img className={classes.img} alt="complex" src={image3} />
                 </div>
               </Grid>
-              <Typography gutterBottom variant="h6">
+              <Typography
+                gutterBottom
+                variant="h6"
+                className={classes.bold}
+              >
                 {t('commercial.title3')}
               </Typography>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography
+                variant="subtitle1"
+                gutterBottom
+                className={classes.bold}
+              >
                 {t('commercial.subtitle3')}
               </Typography>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography
+                variant="subtitle1"
+                gutterBottom
+                className={classes.bold}
+              >
                 {t('commercial.subtitle3a')}
               </Typography>
             </Paper>
@@ -92,13 +131,25 @@ const Commercial: React.FC = () => {
                 <div className={classes.image}>
                   <img className={classes.img} alt="complex" src={image4} />
                 </div>
-                <Typography gutterBottom variant="h6">
+                <Typography
+                  gutterBottom
+                  variant="h6"
+                  className={classes.bold}
+                >
                   {t('commercial.title4')}
                 </Typography>
-                <Typography variant="subtitle1" gutterBottom>
+                <Typography
+                  variant="subtitle1"
+                  gutterBottom
+                  className={classes.bold}
+                >
                   {t('commercial.subtitle4')}
                 </Typography>
-                <Typography variant="subtitle1" gutterBottom>
+                <Typography
+                  variant="subtitle1"
+                  gutterBottom
+                  className={classes.bold}
+                >
                   {t('commercial.subtitle4a')}
                 </Typography>
               </Grid>

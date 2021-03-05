@@ -52,7 +52,11 @@ const Banner: React.FC = () => {
                 </Typography>
               </Grid>
               <Grid item>
-                <Button href="/pay-form" variant="contained">
+                <Button
+                  href="/pay-form"
+                  variant="contained"
+                  style={{ fontWeight: 'bold' }}
+                >
                   {t('banner.button')}
                 </Button>
               </Grid>

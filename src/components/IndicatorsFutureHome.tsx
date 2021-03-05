@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#D8D8D8',
   },
   paperWidth: {
-    flexGrow: 1,
     marginTop: 20,
     marginBottom: 20,
     paddingBottom: 20,
@@ -38,7 +37,7 @@ const IndicatorsFutureHome: React.FC = () => {
           className={classes.paperWidth}
           spacing={2}
         >
-          <Grid item direction="column" className={classes.root}>
+          <Grid item direction="column" className={classes.root} xs={4}>
             <Typography gutterBottom variant="h6">
               {t('indicatorsFH.titleCard')}
             </Typography>
@@ -52,7 +51,7 @@ const IndicatorsFutureHome: React.FC = () => {
               {t('indicatorsFH.common')}
             </Button>
           </Grid>
-          <Grid item direction="column" className={classes.root}>
+          <Grid item direction="column" className={classes.root} xs={4}>
             <Typography gutterBottom variant="h6">
               {t('indicatorsFH.titleCard1')}
             </Typography>
@@ -66,7 +65,7 @@ const IndicatorsFutureHome: React.FC = () => {
               {t('indicatorsFH.common')}
             </Button>
           </Grid>
-          <Grid item direction="column" className={classes.root}>
+          <Grid item direction="column" className={classes.root} xs={4}>
             <Typography gutterBottom variant="h6">
               {t('indicatorsFH.titleCard2')}
             </Typography>
