@@ -3,7 +3,7 @@ import PrimarySearchAppBar from './PrimarySearchAppBar';
 import Footer from './Footer';
 
 const Layout: React.FC = ({ children }: any) => (
-  <div>
+  <div style={{ boxSizing: 'border-box', margin: 0, padding: 0 }}>
     <PrimarySearchAppBar />
     {children}
     <Footer />

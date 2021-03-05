@@ -12,7 +12,7 @@ const IndexPage: React.FC = () => {
   return (
     <>
       <CssBaseline />
-      <div style={{ width: '100%' }}>
+      <div>
         <Header />
         <Banner />
         <Commercial />

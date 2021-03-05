@@ -43,11 +43,11 @@ const Header: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <Paper>
+      <Paper style={{ paddingTop: 30, paddingBottom: 30 }}>
         <Grid container direction="row" justify="space-around">
-          <Grid item xs={6} container>
+          <Grid item lg={6} container>
             <Grid item container>
-              <Grid item container className={classes.space}>
+              <Grid item container justify="center">
                 <Grid container direction="column" justify="center">
                   <Typography
                     align="center"
@@ -74,11 +74,15 @@ const Header: React.FC = () => {
                     {t('header.subtitleNext')}
                   </Typography>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item container lg={6} justify="center">
                   <Button
                     href="/pay-form"
                     variant="contained"
-                    style={{ backgroundColor: 'black', color: 'white' }}
+                    style={{
+                      backgroundColor: 'black',
+                      color: 'white',
+                      marginBottom: 10,
+                    }}
                   >
                     {t('header.buyBtn')}
                   </Button>

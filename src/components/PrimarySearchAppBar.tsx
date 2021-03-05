@@ -160,7 +160,7 @@ const PrimarySearchAppBar: React.FC = () => {
       <div
         style={{
           backgroundColor: 'black',
-          height: 20,
+          height: 30,
           width: '100%',
         }}
       />

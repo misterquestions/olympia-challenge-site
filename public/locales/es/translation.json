@@ -21,17 +21,13 @@
   },
   "commercial": {
     "title1": "Optimiza el tiempo de lavado",
-    "subtitle1": "Encuentra la lavadora ideal",
-    "subtitle1a": "para tu espacio y estilo de vida",
+    "subtitle1": "Encuentra la lavadora ideal para tu espacio y estilo de vida",
     "title2": "Encuentra la paz en la cocina",
-    "subtitle2": "Identifica los electrodomésticos que te",
-    "subtitle2a": "llevena tus metas de salud y bienestar",
+    "subtitle2": "Identifica los electrodomésticos que te llevena a tus metas de salud y bienestar",
     "title3": "La limpieza casi como magia",
-    "subtitle3": "Ólvidate de la limpieza,",
-    "subtitle3a": "y gana tiempo para tí",
+    "subtitle3": "Ólvidate de la limpieza, y gana tiempo para tí",
     "title4": "La temperatura ideal!",
-    "subtitle4": "Que cada cuarto de tu casa",
-    "subtitle4a": "sea el más comfortable"
+    "subtitle4": "Que cada cuarto de tu casa sea el más comfortable"
   },
   "indicatorsFH": {
     "title": "Indicadores Future Home",
@@ -46,5 +42,12 @@
     "titleCard2": "Eficiencia Energética",
     "subtitleCard2": "Indentifica los productos",
     "subtitleCardNext2": "más eficientes energéticamente"
+  },
+  "footer": {
+    "title": "¡Súscribete e inspirate!",
+    "subtitle1": "Productos",
+    "subtitle2": "Atención al cliente",
+    "subtitle3": "Future",
+    "subtitle4": "Síguenos"
   }
 }

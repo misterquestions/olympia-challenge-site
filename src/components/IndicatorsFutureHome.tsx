@@ -8,14 +8,13 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 360,
-    maxHeight: 360,
     backgroundColor: '#D8D8D8',
+    marginBottom: 20,
+    marginTop: 20,
+    width: 300,
   },
   paperWidth: {
-    marginTop: 20,
-    marginBottom: 20,
-    paddingBottom: 20,
+    margin: 20,
   },
 }));
 
@@ -31,48 +30,43 @@ const IndicatorsFutureHome: React.FC = () => {
         <Typography variant="subtitle1" gutterBottom>
           {t('indicatorsFH.subtitle')}
         </Typography>
-        <Grid
-          container
-          justify="space-around"
-          className={classes.paperWidth}
-          spacing={2}
-        >
-          <Grid item direction="column" className={classes.root} xs={4}>
-            <Typography gutterBottom variant="h6">
+        <Grid container justify="space-around" spacing={2}>
+          <Grid item className={classes.root} xl={6}>
+            <Typography gutterBottom variant="h6" align="center">
               {t('indicatorsFH.titleCard')}
             </Typography>
-            <Typography variant="subtitle2" gutterBottom>
+            <Typography variant="subtitle2" gutterBottom align="center">
               {t('indicatorsFH.subtitleCard')}
             </Typography>
-            <Typography variant="subtitle2" gutterBottom>
+            <Typography variant="subtitle2" gutterBottom align="center">
               {t('indicatorsFH.subtitleCardNext')}
             </Typography>
             <Button href="/item-detail" variant="contained">
               {t('indicatorsFH.common')}
             </Button>
           </Grid>
-          <Grid item direction="column" className={classes.root} xs={4}>
-            <Typography gutterBottom variant="h6">
+          <Grid item className={classes.root} xl={6}>
+            <Typography gutterBottom variant="h6" align="center">
               {t('indicatorsFH.titleCard1')}
             </Typography>
-            <Typography variant="subtitle2" gutterBottom>
-              {t('indicatorFH.subtitleCard1')}
+            <Typography variant="subtitle2" gutterBottom align="center">
+              {t('indicatorsFH.subtitleCard1')}
             </Typography>
-            <Typography variant="subtitle2" gutterBottom>
+            <Typography variant="subtitle2" gutterBottom align="center">
               {t('indicatorsFH.subtitleCardNext1')}
             </Typography>
             <Button href="/item-detail" variant="contained">
               {t('indicatorsFH.common')}
             </Button>
           </Grid>
-          <Grid item direction="column" className={classes.root} xs={4}>
-            <Typography gutterBottom variant="h6">
+          <Grid item className={classes.root} xl={6}>
+            <Typography gutterBottom variant="h6" align="center">
               {t('indicatorsFH.titleCard2')}
             </Typography>
-            <Typography variant="subtitle2" gutterBottom>
+            <Typography variant="subtitle2" gutterBottom align="center">
               {t('indicatorsFH.subtitleCard2')}
             </Typography>
-            <Typography variant="subtitle2" gutterBottom>
+            <Typography variant="subtitle2" gutterBottom align="center">
               {t('indicatorsFH.subtitleCardNext2')}
             </Typography>
             <Button href="/item-detail" variant="contained">

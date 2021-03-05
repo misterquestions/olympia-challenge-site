@@ -11,14 +11,13 @@ import image4 from '../assets/images/image4.png';
 
 const useStyles = makeStyles(() => ({
   root: {
-    flexGrow: 1,
     marginTop: 20,
   },
   image: {
     width: '100%',
   },
   bold: {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   img: {
     margin: 'auto',
@@ -32,129 +31,107 @@ const Commercial: React.FC = () => {
   const { t } = useTranslation();
   const classes = useStyles();
   return (
-    <Grid container className={classes.root} spacing={1}>
-      <Grid item xs={12}>
-        <Grid container justify="center" spacing={1}>
-          <Grid item>
-            <Paper>
-              <Grid item>
-                <div className={classes.image}>
-                  <img className={classes.img} alt="complex" src={image1} />
-                </div>
-              </Grid>
+    <Grid container className={classes.root}>
+      <Grid container spacing={2}>
+        <Grid item lg={3}>
+          <Paper>
+            <Grid item>
+              <div className={classes.image}>
+                <img className={classes.img} alt="complex" src={image1} />
+              </div>
+            </Grid>
+            <Typography
+              align="center"
+              gutterBottom
+              variant="h6"
+              className={classes.bold}
+            >
+              {t('commercial.title1')}
+            </Typography>
+            <Typography
+              align="center"
+              variant="subtitle1"
+              gutterBottom
+              className={classes.bold}
+            >
+              {t('commercial.subtitle1')}
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item lg={3}>
+          <Paper>
+            <Grid item>
+              <div className={classes.image}>
+                <img className={classes.img} alt="complex" src={image2} />
+              </div>
+            </Grid>
+            <Typography
+              align="center"
+              gutterBottom
+              variant="h6"
+              className={classes.bold}
+            >
+              {t('commercial.title2')}
+            </Typography>
+            <Typography
+              align="center"
+              variant="subtitle1"
+              gutterBottom
+              className={classes.bold}
+            >
+              {t('commercial.subtitle2')}
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item lg={3}>
+          <Paper>
+            <Grid item>
+              <div className={classes.image}>
+                <img className={classes.img} alt="complex" src={image3} />
+              </div>
+            </Grid>
+            <Typography
+              align="center"
+              gutterBottom
+              variant="h6"
+              className={classes.bold}
+            >
+              {t('commercial.title3')}
+            </Typography>
+            <Typography
+              align="center"
+              variant="subtitle1"
+              gutterBottom
+              className={classes.bold}
+            >
+              {t('commercial.subtitle3')}
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item lg={3}>
+          <Paper>
+            <Grid item>
+              <div className={classes.image}>
+                <img className={classes.img} alt="complex" src={image4} />
+              </div>
               <Typography
+                align="center"
                 gutterBottom
                 variant="h6"
                 className={classes.bold}
               >
-                {t('commercial.title1')}
+                {t('commercial.title4')}
               </Typography>
               <Typography
+                align="center"
                 variant="subtitle1"
                 gutterBottom
                 className={classes.bold}
               >
-                {t('commercial.subtitle1')}
+                {t('commercial.subtitle4')}
               </Typography>
-              <Typography
-                variant="subtitle1"
-                gutterBottom
-                className={classes.bold}
-              >
-                {t('commercial.subtitle1a')}
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item>
-            <Paper>
-              <Grid item>
-                <div className={classes.image}>
-                  <img className={classes.img} alt="complex" src={image2} />
-                </div>
-              </Grid>
-              <Typography
-                gutterBottom
-                variant="h6"
-                className={classes.bold}
-              >
-                {t('commercial.title2')}
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                gutterBottom
-                className={classes.bold}
-              >
-                {t('commercial.subtitle2')}
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                gutterBottom
-                className={classes.bold}
-              >
-                {t('commercial.subtitle2a')}
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item>
-            <Paper>
-              <Grid item>
-                <div className={classes.image}>
-                  <img className={classes.img} alt="complex" src={image3} />
-                </div>
-              </Grid>
-              <Typography
-                gutterBottom
-                variant="h6"
-                className={classes.bold}
-              >
-                {t('commercial.title3')}
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                gutterBottom
-                className={classes.bold}
-              >
-                {t('commercial.subtitle3')}
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                gutterBottom
-                className={classes.bold}
-              >
-                {t('commercial.subtitle3a')}
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item>
-            <Paper>
-              <Grid item>
-                <div className={classes.image}>
-                  <img className={classes.img} alt="complex" src={image4} />
-                </div>
-                <Typography
-                  gutterBottom
-                  variant="h6"
-                  className={classes.bold}
-                >
-                  {t('commercial.title4')}
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  gutterBottom
-                  className={classes.bold}
-                >
-                  {t('commercial.subtitle4')}
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  gutterBottom
-                  className={classes.bold}
-                >
-                  {t('commercial.subtitle4a')}
-                </Typography>
-              </Grid>
-            </Paper>
-          </Grid>
+            </Grid>
+          </Paper>
         </Grid>
       </Grid>
     </Grid>
