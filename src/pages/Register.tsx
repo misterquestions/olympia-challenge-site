@@ -1,14 +1,11 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
-import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTranslation } from 'react-i18next';
-import { Twitter, Facebook } from '@material-ui/icons';
 import Button from '@material-ui/core/Button';
-import Checkbox from '@material-ui/core/Checkbox';
 import Banner from '../components/Banner';
 
 const useStyles = makeStyles((theme) => ({
@@ -19,10 +16,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     alignContent: 'center',
   },
-  card: {
-    backgroundColor: 'black',
-    color: 'white',
-    padding: 10,
+  decorate: {
+    margin: 30,
+    padding: 30,
   },
 }));
 
@@ -39,73 +35,58 @@ const Register: React.FC = () => {
     <Paper>
       <Banner />
       <Card>
-        <Grid container xl={12} justify="center">
-          <Grid container xl={12} alignContent="center">
-            <Grid item xs={6}>
-              <Typography align="center">
-                <div className="row">
-                  <div className="input-field col s6">
-                    <TextField
-                      autoComplete="on"
-                      label="Email"
-                      variant="outlined"
-                      color="secondary"
-                      size="small"
-                    />
-                  </div>
-                  <div className="input-field col s6">
-                    <TextField
-                      id="outlined-password-input"
-                      label="Password"
-                      type="password"
-                      autoComplete="current-password"
-                      variant="outlined"
-                    />
-                  </div>
-                </div>
-                <Button
-                  href="/pay-form"
-                  variant="contained"
-                  style={{ fontWeight: 'bold' }}
-                >
-                  {t('login.title')}
-                </Button>
-              </Typography>
-              <Typography align="center">
-                <Grid justify="center" direction="row">
-                  <Checkbox
-                    defaultChecked
-                    color="primary"
-                    inputProps={{ 'aria-label': 'secondary checkbox' }}
+        <Grid container lg={12} justify="center">
+          <Grid container justify="center" className={classes.decorate}>
+            <Grid container className={classes.container}>
+              <Grid item>
+                <Grid container direction="column">
+                  <TextField
+                    autoComplete="on"
+                    label="First Name"
+                    variant="outlined"
+                    color="secondary"
+                    size="small"
                     onChange={handleChange}
                   />
-                  <Typography>{t('login.rememberMe')}</Typography>
-                  <a href="/">{t('login.subtitle1')}</a>
+                  <TextField
+                    autoComplete="on"
+                    label="Last Name"
+                    variant="outlined"
+                    color="secondary"
+                    size="small"
+                    onChange={handleChange}
+                  />
                 </Grid>
-              </Typography>
+              </Grid>
+              <Grid item>
+                <Grid container direction="column">
+                  <TextField
+                    autoComplete="on"
+                    label="Email"
+                    variant="outlined"
+                    color="secondary"
+                    size="small"
+                    onChange={handleChange}
+                  />
+                  <TextField
+                    id="outlined-password-input"
+                    label="Password"
+                    type="password"
+                    autoComplete="current-password"
+                    variant="outlined"
+                    size="small"
+                    onChange={handleChange}
+                  />
+                </Grid>
+              </Grid>
             </Grid>
-            <Grid item xs={6} className={classes.container}>
-              <Typography align="center">
-                <Grid container direction="row" justify="center">
-                  <Twitter />
-                  <Typography>{t('login.subtitle2')}</Typography>
-                </Grid>
-                <Grid container direction="row" justify="center">
-                  <Facebook />
-                  <Typography>{t('login.subtitle3')}</Typography>
-                </Grid>
-              </Typography>
-              <Typography align="center">
-                <Typography align="center">{t('login.btnTitle')}</Typography>
-                <Button
-                  href="/pay-form"
-                  variant="contained"
-                  style={{ fontWeight: 'bold' }}
-                >
-                  {t('login.btn')}
-                </Button>
-              </Typography>
-            </Grid>
+            <Button
+              href="/pay-form"
+              variant="contained"
+              style={{ fontWeight: 'bold' }}
+            >
+              {t('register.btn')}
+            </Button>
           </Grid>
         </Grid>
       </Card>

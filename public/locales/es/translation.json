@@ -76,6 +76,9 @@
     "seventhA": "solo elécrtica",
     "seventhB": "eléctrica y de gas"
   },
+  "register": {
+    "btn": "Registrate"
+  },
   "footer": {
     "title": "¡Súscribete e inspirate!",
     "subtitle1": "Productos",
