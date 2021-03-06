@@ -84,6 +84,16 @@
     "subtitle1": "Productos",
     "subtitle2": "Atención al cliente",
     "subtitle3": "Future",
-    "subtitle4": "Síguenos"
+    "subtitle4": "Síguenos",
+    "btn": "Enviar"
+  },
+  "common": {
+    "lav": "Lavarropas",
+    "sec": "Secarropas",
+    "aier": "Aire acondicionado",
+    "est": "Estufas",
+    "inst": "Instant Pot",
+    "asp": "Aspiradoras",
+    "other": "Otros productos"
   }
 }
