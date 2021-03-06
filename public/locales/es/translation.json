@@ -1,5 +1,53 @@
 {
   "index": {
     "hello": "Hola mundo!"
+  },
+  "navBar": {
+    "title": "Home Future",
+    "login": "Iniciar Seción",
+    "register": "Regístrate"
+  },
+  "header": {
+    "title":"Optimiza tus días",
+    "subtitle": "El poder de elegir Electrodomésticos",
+    "subtitleNext": "Sustentables, eficientes y a precios accesibles",
+    "buyBtn": "Comprá Ahora"
+  },
+  "banner": {
+    "title": "Genera tu Home iD",
+    "subtitle1": "Solo 90 segundos para encontrar los productos",
+    "subtitle2": "mas afines a tu estilo de vida",
+    "button": "COMIENZA AHORA"
+  },
+  "commercial": {
+    "title1": "Optimiza el tiempo de lavado",
+    "subtitle1": "Encuentra la lavadora ideal para tu espacio y estilo de vida",
+    "title2": "Encuentra la paz en la cocina",
+    "subtitle2": "Identifica los electrodomésticos que te llevena a tus metas de salud y bienestar",
+    "title3": "La limpieza casi como magia",
+    "subtitle3": "Ólvidate de la limpieza, y gana tiempo para tí",
+    "title4": "La temperatura ideal!",
+    "subtitle4": "Que cada cuarto de tu casa sea el más comfortable"
+  },
+  "indicatorsFH": {
+    "title": "Indicadores Future Home",
+    "subtitle": "Elige el producto indicado para tí en minutos",
+    "titleCard": "Tiempo de Instalación",
+    "subtitleCard": "Indica el esfuerzo requerido",
+    "subtitleCardNext": "para instalar tu producto",
+    "common": "Leer más",
+    "titleCard1": "Tieme Server",
+    "subtitleCard1": "Indice de que tan autonomo",
+    "subtitleCardNext1": "es el producto",
+    "titleCard2": "Eficiencia Energética",
+    "subtitleCard2": "Indentifica los productos",
+    "subtitleCardNext2": "más eficientes energéticamente"
+  },
+  "footer": {
+    "title": "¡Súscribete e inspirate!",
+    "subtitle1": "Productos",
+    "subtitle2": "Atención al cliente",
+    "subtitle3": "Future",
+    "subtitle4": "Síguenos"
   }
 }
