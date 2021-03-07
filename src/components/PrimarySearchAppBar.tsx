@@ -36,6 +36,10 @@ const useStyles = makeStyles((theme: Theme) =>
         display: 'block',
       },
     },
+    title_a: {
+      textDecoration: 'none',
+      color: 'black',
+    },
     search: {
       position: 'relative',
       borderRadius: theme.shape.borderRadius,
@@ -178,7 +182,9 @@ const PrimarySearchAppBar: React.FC = () => {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            {t('navBar.title')}
+            <a href="/" className={classes.title_a}>
+              {t('navBar.title')}
+            </a>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

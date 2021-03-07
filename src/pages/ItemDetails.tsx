@@ -13,7 +13,7 @@ import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import headerImage from '../assets/images/Lavasecadora_Header.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     backgroundColor: red[500],
+    color: 'white',
   },
 }));
 
@@ -55,12 +56,14 @@ const ItemDetails: React.FC = () => {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            R
+            HF
           </Avatar>
         }
         action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
+          <IconButton>
+            <a href="/pay-form">
+              <ShoppingCartIcon />
+            </a>
           </IconButton>
         }
         title="LAVARROPAS AUTOMATICO NEXTT 7-10 ECO 7"
@@ -96,7 +99,6 @@ const ItemDetails: React.FC = () => {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
           <Typography paragraph>Ficha Técnica</Typography>
           <Typography paragraph>EAN 7795473028769</Typography>
           <Typography paragraph>Alto 85.5</Typography>
