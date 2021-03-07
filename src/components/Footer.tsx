@@ -8,12 +8,13 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Twitter, Facebook, Instagram, WhatsApp } from '@material-ui/icons';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
+  root: {
+    width: '100%',
+  },
   paper: {
     backgroundColor: 'black',
-    padding: theme.spacing(2),
-    margin: 'auto',
-    height: 300,
+    width: '100%',
   },
   textColor: {
     color: 'white',
@@ -34,7 +35,7 @@ const Footer: React.FC = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.root}>
       <Paper className={classes.paper}>
         <Grid container justify="space-around" className={classes.textColor}>
           <Grid item lg={2}>

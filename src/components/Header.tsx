@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import headerImage from '../assets/images/Lavasecadora_Header.png';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
   },
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                 </Grid>
                 <Grid item container lg={6} justify="center">
                   <Button
-                    href="/pay-form"
+                    href="/item-detail"
                     variant="contained"
                     style={{
                       backgroundColor: 'black',

@@ -20,6 +20,9 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    root: {
+      width: '100%',
+    },
     grow: {
       flexGrow: 1,
     },
@@ -156,7 +159,7 @@ const PrimarySearchAppBar: React.FC = () => {
   );
 
   return (
-    <div className={classes.grow}>
+    <div className={classes.root}>
       <div
         style={{
           backgroundColor: 'black',
