@@ -132,8 +132,12 @@ const PrimarySearchAppBar: React.FC = () => {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>{t('navBar.login')}</MenuItem>
-      <MenuItem onClick={handleMenuClose}>{t('navBar.register')}</MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <a href="/login">{t('navBar.login')}</a>
+      </MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <a href="/register">{t('navBar.register')}</a>
+      </MenuItem>
     </Menu>
   );
 
