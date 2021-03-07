@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                 </Grid>
                 <Grid item container lg={6} justify="center">
                   <Button
-                    href="/pay-form"
+                    href="/item-detail"
                     variant="contained"
                     style={{
                       backgroundColor: 'black',

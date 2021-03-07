@@ -53,7 +53,7 @@ const Banner: React.FC = () => {
               </Grid>
               <Grid item>
                 <Button
-                  href="/pay-form"
+                  href="/home-id"
                   variant="contained"
                   style={{ fontWeight: 'bold' }}
                 >

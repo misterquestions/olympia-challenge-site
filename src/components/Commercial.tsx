@@ -32,7 +32,7 @@ const Commercial: React.FC = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={1}>
         <Grid item lg={3}>
           <Paper>
             <Grid item>

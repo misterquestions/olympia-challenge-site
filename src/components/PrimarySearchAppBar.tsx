@@ -20,6 +20,9 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    root: {
+      width: '100%',
+    },
     grow: {
       flexGrow: 1,
     },
@@ -32,6 +35,10 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.up('sm')]: {
         display: 'block',
       },
+    },
+    title_a: {
+      textDecoration: 'none',
+      color: 'black',
     },
     search: {
       position: 'relative',
@@ -125,8 +132,12 @@ const PrimarySearchAppBar: React.FC = () => {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>{t('navBar.login')}</MenuItem>
-      <MenuItem onClick={handleMenuClose}>{t('navBar.register')}</MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <a href="/login">{t('navBar.login')}</a>
+      </MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <a href="/register">{t('navBar.register')}</a>
+      </MenuItem>
     </Menu>
   );
 
@@ -156,7 +167,7 @@ const PrimarySearchAppBar: React.FC = () => {
   );
 
   return (
-    <div className={classes.grow}>
+    <div className={classes.root}>
       <div
         style={{
           backgroundColor: 'black',
@@ -175,7 +186,9 @@ const PrimarySearchAppBar: React.FC = () => {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            {t('navBar.title')}
+            <a href="/" className={classes.title_a}>
+              {t('navBar.title')}
+            </a>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

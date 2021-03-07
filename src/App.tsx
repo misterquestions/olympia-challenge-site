@@ -7,6 +7,7 @@ import IndexPage from './pages/IndexPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import ItemDetails from './pages/ItemDetails';
+import HomeId from './pages/HomeId';
 import PayForm from './pages/PayForm';
 import NotFound from './pages/NotFound';
 import Layout from './components/Layout';
@@ -26,6 +27,7 @@ const App: React.FC = () => {
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/item-detail" component={ItemDetails} />
+              <Route exact path="/home-id" component={HomeId} />
               <Route exact path="/pay-form" component={PayForm} />
               <Route component={NotFound} />
             </Switch>

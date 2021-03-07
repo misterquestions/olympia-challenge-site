@@ -43,11 +43,57 @@
     "subtitleCard2": "Indentifica los productos",
     "subtitleCardNext2": "más eficientes energéticamente"
   },
+  "login": {
+    "title": "Iniciar seción",
+    "btn": "Regístrate",
+    "rememberMe": "Recordarme",
+    "btnTitle": "No tienes ninguna cuenta?",
+    "subtitle1": "Olvidé mi contraseña",
+    "subtitle2": "Inicia sesión con Google",
+    "subtitle3": "Inicia sesión con Twitter"
+  },
+  "homeId": {
+    "first": "Cual es tu objetivo?",
+    "firstA": "Una limpieza más veloz",
+    "firstB": "Preparar comida eficientemente",
+    "firstC": "Tener ropa siempre limpia y lista",
+    "firstD": "La mejor temperatura",
+    "firstF": "Mi spa en casa",
+    "second": "Selecciona el producto",
+    "secondA": "Lavadora",
+    "secondB": "Planchas",
+    "secondC": "Lavasecadora",
+    "secondD": "Mini lavadora",
+    "third": "¿Es para casa o negocio?",
+    "thirdA": "Casa",
+    "thirdB": "Negocio",
+    "fourth": "Cuántas personas viven en tu hogar?",
+    "fifth": "¿Qué estilo de lavadora prefieres?",
+    "fifthA": "Puerta frontal",
+    "fifthB": "Puerta superior",
+    "sixth": "¿Qué espacio tienes para tu lavadora?",
+    "seventh": "¿Qué tipo de instalación tienes en tu hogar?",
+    "seventhA": "solo elécrtica",
+    "seventhB": "eléctrica y de gas"
+  },
+  "register": {
+    "btn": "Registrate"
+  },
   "footer": {
     "title": "¡Súscribete e inspirate!",
     "subtitle1": "Productos",
     "subtitle2": "Atención al cliente",
     "subtitle3": "Future",
-    "subtitle4": "Síguenos"
+    "subtitle4": "Síguenos",
+    "btn": "Enviar"
+  },
+  "common": {
+    "lav": "Lavarropas",
+    "sec": "Secarropas",
+    "aier": "Aire acondicionado",
+    "est": "Estufas",
+    "inst": "Instant Pot",
+    "asp": "Aspiradoras",
+    "other": "Otros productos"
   }
 }
