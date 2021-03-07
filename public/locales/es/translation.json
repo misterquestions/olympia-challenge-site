@@ -1,7 +1,4 @@
 {
-  "index": {
-    "hello": "Hola mundo!"
-  },
   "navBar": {
     "title": "Home Future",
     "login": "Iniciar Seción",

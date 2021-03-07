@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '@material-ui/core/Button';
 import Banner from '../components/Banner';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -27,6 +27,7 @@ const Register: React.FC = () => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setChecked(event.target.checked);
+    setChecked(checked);
   };
   const { t } = useTranslation();
   const classes = useStyles();
