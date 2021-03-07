@@ -1,24 +1,17 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Commercial from '../components/Commercial';
 import IndicatorsFutureHome from '../components/IndicatorsFutureHome';
 
 const IndexPage: React.FC = () => {
-  const { t } = useTranslation();
-
   return (
-    <>
-      <CssBaseline />
-      <div>
-        <Header />
-        <Banner />
-        <Commercial />
-        <IndicatorsFutureHome />
-      </div>
-    </>
+    <div>
+      <Header />
+      <Banner />
+      <Commercial />
+      <IndicatorsFutureHome />
+    </div>
   );
 };
 
